@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenador Elegante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <header>
+            <h1 class="animate__animated animate__zoomIn">Ordenador de Números</h1>
+        </header>
+        
+        <section class="input-section">
+            <input type="text" id="numeros" placeholder="Digite os números separados por vírgula..." class="input-field">
+            <button id="button" class="submit-btn animate__animated animate__pulse animate__infinite">Ordenar</button>
+        </section>
+
+        <section class="result-section">
+            <ul id="lista" class="result-list"></ul>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</body>
+</html>
